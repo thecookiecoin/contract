@@ -80,7 +80,7 @@ contract Cookie is ERC20, CookieStandard, Ownable {
     uint public stakeStartTime;
     uint public stakeMinAge = 2 days;
     uint public stakeMaxAge = 60 days;
-    uint public maxMintCookie = 15**17;
+    uint public maxMintCookie = 150000000000000000;
 
     uint public totalSupply;
     uint public maxTotalSupply;
@@ -108,8 +108,8 @@ contract Cookie is ERC20, CookieStandard, Ownable {
     }
 
     function Cookie() {
-        maxTotalSupply = 12**25; // 12 Million
-        totalInitialSupply = 20**24; // 1 Million
+        maxTotalSupply = 12000000000000000000000000; // 12 Million
+        totalInitialSupply = 2000000000000000000000000; // 2 Million
 
         chainStartTime = now;
         chainStartBlockNumber = block.number;
